@@ -1,13 +1,14 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "trailingSlash": false,
   "headers": [
     {
       "source": "/assets/(.*)",
-      "missing": [
+      "has": [
         {
           "type": "header",
-          "key": "X-Vercel-Error"
+          "key": "etag"
         }
       ],
       "headers": [
