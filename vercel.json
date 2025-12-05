@@ -4,6 +4,12 @@
   "headers": [
     {
       "source": "/assets/(.*)",
+      "missing": [
+        {
+          "type": "header",
+          "key": "X-Vercel-Error"
+        }
+      ],
       "headers": [
         {
           "key": "Cache-Control",
