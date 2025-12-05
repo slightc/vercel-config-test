@@ -13,6 +13,9 @@
     }
   ],
   "rewrites": [
-    { "source": "/(?!.*\\.js$)(.*)", "destination": "/index.html" }
+    {
+      "source": "/:path((?!.*\\.js$).*)",
+      "destination": "/index.html"
+    }
   ]
 }
