@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/(?!.*\\.js$)(.*)", "destination": "/index.html" }
+  ]
+}
